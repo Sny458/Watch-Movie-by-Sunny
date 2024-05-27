@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background-image: url("images/bg.jpg");
+    min-height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header .nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 75vw;
+    margin: auto;
+}
+
+header .nav .btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.btns #lang {
+    padding: 2px 15px;
+    background-color: rgba(20, 18, 18, 0.435);
+    color: white;
+    border-radius: 7px;
+    font-size: 16px;
+    border-color: rgb(106, 105, 105);
+}
+
+.btns button {
+    color: white;
+    background-color: red;
+    font-size: 13px;
+    border-radius: 7px;
+    padding: 2px 15px;
+    font-weight: 600;
+    border-color: red;
+    cursor: pointer;
+}
+.btns button:hover{
+    background-color: rgb(199, 9, 9);
+    border-color: rgb(199, 9, 9);
+}
+
+header .hero {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(70vh - 80px);
+    font-family: 'Martel Sans', sans-serif;
+    max-width: 70vw;
+    margin: auto;
+    gap: 15px;
+}
+
+.hero> :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero .inputbtn [type="text"] {
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 7px 100px 7px 30px;
+    background-color: rgb(10 7 7 / 62%);
+    border: solid rgb(106, 105, 105);
+    color: white;
+}
+
+.hero .inputbtn button {
+    margin-left: 10px;
+    color: white;
+    background-color: red;
+    font-size: 20px;
+    border-radius: 7px;
+    padding: 7px 24px;
+    font-weight: 600;
+    border-color: red;
+    cursor: pointer;
+}
+.hero .inputbtn button:hover{
+    background-color: rgb(191, 38, 38);
+    border-color: rgb(191, 38, 38);
+}
+
+.sepline {
+    height: 1vh;
+    background-color: rgb(48, 48, 48);
+}
+.sec{
+    display: flex;
+    width: 80vw;
+    min-height: 60vh;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.sec .text{
+    padding: 30px 0px;
+    color: white;
+}
+.sec .text h2{
+    font-size: 40px;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 900;
+}
+.sec .text p {
+    font-family: "Martel Sans", sans-serif;
+    font-size: 20px;
+}
+.sec .secImg{
+    position: relative;
+}
+.sec .secImg img{
+    width: 400px;
+}
+.sec .secImg video{
+    width: 330px;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    z-index: -1;
+}
+.faq{
+    margin-top: 30px;
+}
+.faq h2{
+    color: white;
+    font-size: 48px;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+.faq .box{
+    color: white;
+    display: flex;
+    background-color: #2d2d2d;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+    width: 70vw;
+    padding:10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.faq .box:hover{
+    background-color: #414141;
+}
+.faq>p{
+    margin: 40px 0px 20px 0px;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+}
+.faq .inputbtn{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.faq .inputbtn input{
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 7px 100px 7px 30px;
+    background-color: rgb(10 7 7 / 62%);
+    border: solid rgb(106, 105, 105);
+    color: white;
+}
+.faq .inputbtn button{
+    margin: 10px 10px;
+    color: white;
+    background-color: red;
+    font-size: 20px;
+    border-radius: 7px;
+    padding: 7px 24px;
+    font-weight: 600;
+    border-color: red;
+    cursor: pointer;
+}
+.faq .inputbtn button:hover{
+    background-color: rgb(191, 38, 38);
+    border-color: rgb(191, 38, 38);
+}
+footer{
+    padding:50px 0px 50px 0px;
+}
+footer .call{
+    color: white;
+    font-size: 20px;
+    margin-left: 12vw;
+}
+footer .contents{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px auto;
+    width: 70vw;
+    justify-items: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+footer .contents div a{
+    color: white;
+    font-size: 14px;
+}
+footer .netflixIN{
+    color: white;
+    font-size: 20px;
+    margin-left: 12vw;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1150px){
+    header .nav {
+        height: 70px;
+        max-width: 80vw;
+    }
+    
+    header .nav .btns {
+        gap: 10px;
+    }
+    
+    .btns #lang {
+        padding: 2px 10px;
+        font-size: 10px;
+    }
+    
+    .btns button {
+        font-size: 10px;
+        border-radius: 7px;
+        padding: 2px 10px;
+    }
+    .hero .inputbtn [type="text"] {
+        font-size: 10px;
+        padding: 7px 50px 7px 10px;
+    }
+    
+    .hero .inputbtn button {
+        font-size: 10px;
+        padding: 7px 16px;
+        font-weight: 500;
+    }
+    .sec{
+        flex-wrap: wrap;
+    }
+    .hero> :nth-child(1) {
+        font-size: 28px;
+        font-weight: 700;
+    }
+    
+    .hero> :nth-child(2) {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .hero> :nth-child(3) {
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .sec .text h2{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .sec .text p {
+        font-size: 12px;
+    }
+    .sec .secImg img{
+        width: 300px;
+    }
+    .sec .secImg video{
+        width: 220px;
+        top: 48px;
+        left: 36px;
+    }
+    .faq h2{
+        font-size: 25px;
+        font-weight:700;
+    }
+    .faq .box p{
+        font-size: 13px;
+    }
+    .faq>p{
+        font-size: 16px;
+    }
+    .faq .inputbtn input{
+        font-size: 10px;
+        padding: 7px 50px 7px 10px;
+    }
+    .faq .inputbtn button{
+        margin: 10px 10px;
+        font-size: 10px;
+        padding: 7px 16px;
+        font-weight: 500;
+    }
+    footer .call{
+        font-size: 16px;
+    }
+    footer .contents{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+    footer .contents div a{
+        font-size: 10px;
+    }
+    footer .netflixIN{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 400px){
+    .hero .inputbtn [type="text"] {
+        font-size: 8px;
+        padding: 7px 14px 7px 8px;
+    }
+    
+    .hero .inputbtn button {
+        font-size: 8px;
+        padding: 5px 8px;
+        font-weight: 500;
+    }
+}
